@@ -1,0 +1,20 @@
+$gray: #8e8d8f;
+
+footer {
+    padding: 1% 0;
+    border-top: 2px solid #3e3e3e;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__left {
+        
+        a {
+            margin-right: 10px;
+        }
+    }
+
+    a, span {
+        color: $gray;
+        font-size: 14px;
+    }
+}
