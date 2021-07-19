@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-	constructor() { }
+	profilePhoto: string;
+
+	constructor() {
+		this.profilePhoto = '../../../../assets/img/itachi_2.jpg';
+		// this.profilePhoto = '../../../../assets/img/jhoan-d.jpg';
+		// this.profilePhoto = '../../../../assets/img/jhoan-dc.jpg';
+		// this.profilePhoto = '../../../../assets/img/jhoan-dh.jpg';
+	}
 
 	ngOnInit(): void {
 	}

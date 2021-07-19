@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'custom-button',
-  templateUrl: './custom-button.component.html',
-  styleUrls: ['./custom-button.component.scss']
+	selector: 'custom-button',
+	templateUrl: './custom-button.component.html',
+	styleUrls: ['./custom-button.component.scss'],
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CustomButtonComponent implements OnInit {
+export class CustomButtonComponent {
 
-  constructor() { }
+	@Input() label: string = '';
 
-  ngOnInit(): void {
-  }
+	constructor() { }
 
 }
