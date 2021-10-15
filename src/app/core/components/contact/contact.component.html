@@ -1,0 +1,46 @@
+<div class="contact">
+    <div class="contact-title">Contacto</div>
+
+    <div class="contact-content">
+        <div class="contact-content-left">
+            <div class="contact-item">
+                <div class="icon">
+                    <i class='bx bx-current-location'></i>
+                </div>
+                <div class="location">
+                    <h4>Lima, Perú</h4>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon">
+                    <i class='bx bx-mail-send'></i>
+                </div>
+                <div class="location">
+                    <h4>jhoansanchez126@gmail.com</h4>
+                    <span>¿Interesado en mi trabajo? ¡Envíame un mensaje para más información!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-content-right">
+            <div class="title">
+                <h4>¿Puedo ayudarte?</h4>
+            </div>
+
+            <div class="contact-form">
+                <div class="form" [formGroup]="contactForm">
+                    <div class="form-left">
+                        <input type="text" class="custom_input" placeholder="Nombre Completo" formControlName="fullName">
+                        <input type="text" class="custom_input" placeholder="Correo" formControlName="email">
+                        <input type="text" class="custom_input" placeholder="Asunto" formControlName="subject">
+                    </div>
+                    <div class="form-right">
+                        <textarea type="text" class="custom_input textarea" placeholder="Mensaje" formControlName="message"></textarea>
+                    </div>
+                </div>
+                <custom-button [label]="'Send message'" (click)="onSubmit()"></custom-button>
+            </div>
+            
+        </div>
+    </div>
+</div>

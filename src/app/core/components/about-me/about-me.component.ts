@@ -3,10 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
 	selector: 'about-me',
 	templateUrl: './about-me.component.html',
-	styleUrls: ['./about-me.component.scss']
+	styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent implements OnInit {
-
 	profilePhoto: string;
 
 	constructor() {
@@ -16,7 +15,5 @@ export class AboutMeComponent implements OnInit {
 		// this.profilePhoto = '../../../../assets/img/jhoan-dh.jpg';
 	}
 
-	ngOnInit(): void {
-	}
-
+	ngOnInit(): void {}
 }
