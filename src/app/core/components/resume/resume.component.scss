@@ -1,0 +1,19 @@
+$blue: #0080ff;
+$white: #f8f8f8;
+$gray: #8e8d8f;
+
+.resumen {
+
+    &__content {
+        display: flex;
+        margin: 2rem 0;
+
+        &__education {
+            flex: 0.5 1;
+        }
+
+        &__experience {
+            flex: 0.5 1;
+        }
+    }
+}

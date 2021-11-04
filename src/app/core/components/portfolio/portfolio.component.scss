@@ -5,15 +5,7 @@ $gray: #8e8d8f;
 .portfolio {
     margin-bottom: 2rem;
 
-    .title {
-        color: $white;
-        padding: 3% 0;
-        font-size: 40px;
-        font-weight: 700;
-        border-bottom: 2px solid #3e3e3e;
-    }
-
-    .portfolio-nav {
+    .portfolio__nav {
         display: flex;
         justify-content: center;
         user-select: none;
@@ -38,12 +30,12 @@ $gray: #8e8d8f;
         }
     }
 
-    .portfolio-content {
+    .portfolio__content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
         gap: 1rem;
 
-        .portfolio-item {
+        .portfolio__content__item {
             cursor: pointer;
             position: relative;
             border-radius: 10px;

@@ -4,15 +4,6 @@ $gray: #8e8d8f;
 
 .contact {
 
-
-    &-title {
-        color: $white;
-        padding: 3% 0;
-        font-size: 40px;
-        font-weight: 700;
-        border-bottom: 2px solid #3e3e3e;
-    }
-
     &-content {
 
         display: flex;
@@ -50,25 +41,6 @@ $gray: #8e8d8f;
 
         &-right {
             flex: .6 1;
-
-            .title {
-                color: $white;
-
-                h4 {
-                    width: 300px;
-                    border-bottom: 2px solid #3e3e3e;
-                    position: relative;
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        bottom: -2px;
-                        left: 0;
-                        width: 40px;
-                        border-bottom: 2px solid $blue;
-                    }
-                }
-            }
 
             .contact-form {
                 margin-top: 2rem;
