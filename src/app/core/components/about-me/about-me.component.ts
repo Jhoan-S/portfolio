@@ -15,5 +15,5 @@ export class AboutMeComponent implements OnInit {
 		// this.profilePhoto = '../../../../assets/img/jhoan-dh.jpg';
 	}
 
-	ngOnInit(): void {}
+	ngOnInit(): void { }
 }

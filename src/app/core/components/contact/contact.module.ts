@@ -5,6 +5,8 @@ import { ContactComponent } from './contact.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomButtonModule } from 'src/app/shared/components/custom-button/custom-button.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CustomTitleModule } from 'src/app/shared/components/custom-title/custom-title.module';
+import { CustomHeaderModule } from 'src/app/shared/components/custom-header/custom-header.module';
 
 const components = [ContactComponent];
 
@@ -19,6 +21,8 @@ const routes: Routes = [
     declarations: [...components],
     imports: [
         CommonModule,
+        CustomTitleModule,
+        CustomHeaderModule,
         CustomButtonModule,
         ReactiveFormsModule,
         RouterModule.forChild(routes)

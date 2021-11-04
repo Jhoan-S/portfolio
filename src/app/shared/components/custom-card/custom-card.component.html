@@ -1,0 +1,46 @@
+<div class="card">
+    <div *ngFor="let conocimiento of conocimientos" class="card__content">
+        <div class="card__content__header">
+            <custom-button [label]="conocimiento.startDate + ' - ' + conocimiento.endDate" type="customLabel"></custom-button>
+            <span>{{ conocimiento.enterprise }}, {{ conocimiento.city }}</span>
+        </div>
+        <div class="card__content__info">
+            <h4>{{ conocimiento.title }}</h4>
+            <ng-container
+                [ngTemplateOutlet]="getSelectedTemplate(conocimiento.type)"
+                [ngTemplateOutletContext]="{ data: conocimiento.type === 'list' ? conocimiento.tasks : conocimiento.description }"></ng-container>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="card">
+    <div class="card__content">
+        <div class="card__content__header">
+            <custom-button label="2020 - Current" type="customLabel"></custom-button>
+            <span>Sintad, Lima</span>
+        </div>
+        <div class="card__content__info">
+            <h4>Desarrollador Web</h4>
+            <ng-container [ngTemplateOutlet]="list"></ng-container>
+        </div>
+    </div>
+    <div class="card__content">
+        <div class="card__content__header">
+            <custom-button label="2017 - 2019" type="customLabel"></custom-button>
+            <span>Cibertec, Lima</span>
+        </div>
+        <div class="card__content__info">
+            <h4>Computación Informática</h4>
+            <ng-container [ngTemplateOutlet]="text"></ng-container>
+        </div>
+    </div>
+</div> -->
+
+<ng-template #list let-data="data">
+    <ul>
+        <li *ngFor="let task of data">{{ task }}</li>
+    </ul>
+</ng-template>
+<ng-template #text let-data="data">
+    <p>{{ data }}</p>
+</ng-template>

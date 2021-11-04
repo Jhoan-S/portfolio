@@ -1,1 +1,9 @@
-<button type="button">{{ label }}</button>
+<ng-container [ngTemplateOutlet]="getSelectedTemplate(type)"></ng-container>
+
+<ng-template #customButton>
+    <button type="button">{{ label }}</button>
+</ng-template>
+
+<ng-template #customLabel>
+    <span class="label">{{ label }}</span>
+</ng-template>

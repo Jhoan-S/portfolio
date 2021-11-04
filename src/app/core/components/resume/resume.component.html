@@ -1,1 +1,15 @@
-<p>Resume works!</p>
+<div class="resumen">
+    <custom-header headerTitle="Resumen"></custom-header>
+
+    <div class="resumen__content">
+        <div class="resumen__content__education">
+            <custom-title title="Education"></custom-title>
+            <custom-card [conocimientos]="education"></custom-card>
+        </div>
+
+        <div class="resumen__content__experience">
+            <custom-title title="Experience"></custom-title>
+            <custom-card [conocimientos]="experience"></custom-card>
+        </div>
+    </div>
+</div>
