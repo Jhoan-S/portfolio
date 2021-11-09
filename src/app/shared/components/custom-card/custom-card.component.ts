@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Knowledge } from '@models/Knowledge';
 
 @Component({
     selector: 'custom-card',
@@ -25,15 +26,4 @@ export class CustomCardComponent implements OnInit {
                 return null;
         }
     }
-}
-
-interface Knowledge {
-    type: string;
-    city: string;
-    title: string;
-    tasks: string[];
-    endDate: string;
-    startDate: string;
-    enterprise: string;
-    description: string;
 }

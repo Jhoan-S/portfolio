@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Knowledge } from '@models/Knowledge';
 
 @Component({
     selector: 'app-resume',
@@ -16,7 +17,8 @@ export class ResumeComponent implements OnInit {
             endDate: '2019',
             startDate: '2017',
             enterprise: 'Cibertec',
-            description: 'Main focus of the master program Information Management: Managing informatics in organizations, with an emphasis on the security of information systems.'
+            description: 'El objetivo de del curso aprender ps amix.'
+            // description: 'Main focus of the master program Information Management: Managing informatics in organizations, with an emphasis on the security of information systems.'
         }
     ];
 
@@ -58,15 +60,4 @@ export class ResumeComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void { }
-}
-
-interface Knowledge {
-    type: string;
-    city: string;
-    title: string;
-    tasks: string[];
-    endDate: string;
-    startDate: string;
-    enterprise: string;
-    description: string;
 }
